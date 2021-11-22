@@ -1,12 +1,12 @@
 <template>
-  <v-app>
-    <router-view></router-view>
+  <v-app> 
+    This is landing page
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'Landing page',
 
   components: {},
 

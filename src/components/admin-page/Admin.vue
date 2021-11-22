@@ -1,12 +1,12 @@
 <template>
-  <v-app>
-    <router-view></router-view>
+  <v-app> 
+    ADmin python lng malakas 
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'Admi',
 
   components: {},
 

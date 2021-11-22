@@ -1,12 +1,12 @@
 <template>
-  <v-app>
-    <router-view></router-view>
+  <v-app> 
+    HEllo world
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'User',
 
   components: {},
 
