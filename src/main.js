@@ -3,13 +3,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import vuetify from './plugins/vuetify'
-
 // Style
 import './index.css'
-
-
-// Components
+// Admin Components
 import Admin from './components/admin-page/Admin.vue'
+import BookEntry from './components/admin-page/BookEntry.vue'
 import User from './components/user-page/User.vue'
 import LandingPage from './components/landing-page/LandingPage.vue'
 
@@ -19,7 +17,11 @@ Vue.config.productionTip = false
 
 const routes = [
   { path: '/', component: LandingPage },
-  { path: '/admin', component: Admin},
+  {
+    path: '/admin',
+    component: Admin,
+    children: [{ path: '/book-entry', component: BookEntry }],
+  },
   { path: '/user', component: User },
 ]
 

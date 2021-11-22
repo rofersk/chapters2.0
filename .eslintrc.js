@@ -1,39 +1,12 @@
 module.exports = {
-  env: {
-  browser:false,
-  es6: false,
-  node: false,
-  },
-  parser: "babel-eslint",
   extends: [
-  // "eslint:recommended",
-  // "plugin:vue/recommended",
-  // "prettier",
-  // "prettier/vue",
+    // add more generic rulesets here, such as:
+    // 'eslint:recommended',
+    'plugin:vue/recommended' 
+    // 'plugin:vue/recommended' // Use this if you are using Vue.js 2.x.
   ],
-  parserOptions: {
-    ecmaVersion: "2017",
-    ecmaFeatures: {
-      experimentalObjectRestSpread: false,
-    },
-    sourceType: "module",
-  },
-  plugins: ["babel", "import", "prettier","vue"],
   rules: {
-    // "import/no-duplicates": "error",
-    // "import/no-unresolved": "error",
-    // "import/named": "error",
-    // "prettier/prettier": "",
-    // "array-callback-return": "",
-    // "consistent-return": "",
-    // "babel/no-invalid-this": "",
-    // "no-unused-vars": ["", { argsIgnorePattern: "^_" }],
-  },
-  settings: {
-    vue: {
-      pragma: "vue",
-      version: "detect",
-      flowVersion: "0.63.1",
-    },
-  },
-};
+    // override/add rules settings here, such as:
+    // 'vue/no-unused-vars': 'error'
+  }
+}

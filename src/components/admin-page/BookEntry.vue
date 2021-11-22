@@ -1,10 +1,12 @@
 <template>
-  <v-app> </v-app>
+  <v-app>
+    <p>This is book entry hello </p>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: 'Book entry',
+  name: 'BookEntry',
 
   components: {},
 

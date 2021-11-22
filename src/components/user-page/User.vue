@@ -1,7 +1,5 @@
 <template>
-  <v-app> 
-    HEllo world
-  </v-app>
+  <v-app> HEllo world </v-app>
 </template>
 
 <script>

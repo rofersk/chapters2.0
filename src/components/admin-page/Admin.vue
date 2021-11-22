@@ -1,7 +1,5 @@
 <template>
-  <v-app> 
-    ADmin python lng malakas 
-  </v-app>
+  <v-app> ADmin python lng malakas </v-app>
 </template>
 
 <script>
