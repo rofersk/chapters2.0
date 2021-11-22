@@ -1,20 +1,20 @@
 <template>
   <v-app>
-  <Header/>
+  <Footer/>
       <router-view></router-view>
     
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+
 import Register from './components/Register.vue';
-import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: 'App',
 
   components: {
-    HelloWorld, Register, Header
+    Register, Footer
   },
 
   data: () => ({
