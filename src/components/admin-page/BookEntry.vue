@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <p>This is book entry hello </p>
+    <p>This is book entry hello</p>
   </v-app>
 </template>
 
@@ -13,5 +13,5 @@ export default {
   data: () => ({
     //
   }),
-}
+};
 </script>
