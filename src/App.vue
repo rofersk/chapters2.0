@@ -1,24 +1,23 @@
 <template>
   <v-app>
-  <Footer/>
-      <router-view></router-view>
-    
+    <Footer />
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-
-import Register from './components/Register.vue';
-import Footer from './components/Footer.vue';
+import Register from './components/Register.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'App',
 
   components: {
-    Register, Footer
+    Register,
+    Footer,
   },
 
   data: () => ({
     //
   }),
-};
+}
 </script>
