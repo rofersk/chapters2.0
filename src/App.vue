@@ -1,9 +1,6 @@
 <template>
   <v-app>
-
-      <HelloWorld/>
-      <hr>
-      <Register/>
+  <Header/>
       <router-view></router-view>
     
   </v-app>
@@ -12,11 +9,12 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import Register from './components/Register.vue';
+import Header from './components/Header.vue';
 export default {
   name: 'App',
 
   components: {
-    HelloWorld, Register
+    HelloWorld, Register, Header
   },
 
   data: () => ({
