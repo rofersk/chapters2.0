@@ -1,17 +1,26 @@
 <template>
   <v-app>
-    <BookEntry />
-    <router-view></router-view>
+    <navbar ref="navbar"></navbar>
+    <app-header
+      @toggle-drawer="$refs.navbar.drawer = !$refs.navbar.drawer"
+    ></app-header>
+    <v-main>
+      <v-container>
+        <router-view></router-view>
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import BookEntry from '../admin-page/BookEntry';
+import AdminNavigation from './AdminNavigation';
+import Header from './Header';
 export default {
   name: 'Admin',
 
   components: {
-    BookEntry,
+    navbar: AdminNavigation,
+    'app-header': Header,
   },
 
   data: () => ({
