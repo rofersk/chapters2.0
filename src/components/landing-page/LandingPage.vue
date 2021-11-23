@@ -1,12 +1,20 @@
 <template>
-  <v-app> This is landing page </v-app>
+  <v-app>
+    <Card />
+    <Footer />
+  </v-app>
 </template>
 
 <script>
+import Card from './Card';
+import Footer from './Footer';
 export default {
   name: 'LandingPage',
 
-  components: {},
+  components: {
+    Card,
+    Footer,
+  },
 
   data: () => ({
     //

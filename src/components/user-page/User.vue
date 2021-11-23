@@ -1,12 +1,17 @@
 <template>
-  <v-app> HEllo world </v-app>
+  <v-app>
+    <Header />
+  </v-app>
 </template>
 
 <script>
+import Header from '../landing-page/Header';
 export default {
   name: 'User',
 
-  components: {},
+  components: {
+    Header,
+  },
 
   data: () => ({
     //

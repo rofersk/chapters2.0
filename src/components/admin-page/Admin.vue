@@ -1,15 +1,18 @@
 <template>
   <v-app>
-    ADmin python lng malakas
+    <BookEntry />
     <router-view></router-view>
   </v-app>
 </template>
 
 <script>
+import BookEntry from '../admin-page/BookEntry';
 export default {
-  name: 'Admi',
+  name: 'Admin',
 
-  components: {},
+  components: {
+    BookEntry,
+  },
 
   data: () => ({
     //

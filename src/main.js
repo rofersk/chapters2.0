@@ -20,7 +20,6 @@ const routes = [
   {
     path: '/admin',
     component: Admin,
-    children: [{ path: '/book_entry', component: BookEntry }],
   },
   { path: '/user', component: User },
 ];

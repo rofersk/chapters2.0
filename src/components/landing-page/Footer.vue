@@ -1,7 +1,7 @@
 <template>
   <body class="bg-gray-900 font-family-karla h-screen">
     <div class="mb-16">
-      <footer class="text-gray-600 body-font bg-gray-700">
+      <footer class="text-gray-600 body-font bg-yellow-500">
         <div
           class="
             container
@@ -43,10 +43,10 @@
                   d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
                 />
               </svg>
-              <span class="ml-3 text-xl text-white">DEV</span>
+              <span class="ml-3 text-xl text-white">DEVELOPERS</span>
             </a>
             <p class="mt-2 text-sm text-white">
-              Air plant banjo lyft occupy retro adaptogen indego
+              This project was developed by 3 students from New Era University.
             </p>
           </div>
           <div
@@ -71,26 +71,26 @@
                   mb-3
                 "
               >
-                CATEGORIES
+                ABOUT CHAPTERS ONLINE LIBRARY
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >First Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Second Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Third Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Fourth Link</a
                   >
                 </li>
@@ -107,26 +107,26 @@
                   mb-3
                 "
               >
-                CATEGORIES
+                HELP & SUPPORT
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >First Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Second Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Third Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Fourth Link</a
                   >
                 </li>
@@ -143,27 +143,42 @@
                   mb-3
                 "
               >
-                CATEGORIES
+                UNIVERSITY BRANCHES
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
-                    >First Link</a
+                  <a
+                    class="text-black hover:text-red-300"
+                    href="https://neu.edu.ph/main/index.php/campuses/#qcmain"
+                    >Quezon City (Main Campus)</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
-                    >Second Link</a
+                  <a
+                    class="text-black hover:text-red-300"
+                    href="https://neu.edu.ph/main/index.php/campuses/#pampanga"
+                    >Pampanga</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
-                    >Third Link</a
+                  <a
+                    class="text-black hover:text-red-300"
+                    href="https://neu.edu.ph/main/index.php/campuses/#batangas"
+                    >Batangas</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
-                    >Fourth Link</a
+                  <a
+                    class="text-black hover:text-red-300"
+                    href="https://neu.edu.ph/main/index.php/campuses/#gensan"
+                    >General Santos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-black hover:text-red-300"
+                    href="https://neu.edu.ph/main/index.php/campuses/#rizal"
+                    >Rizal</a
                   >
                 </li>
               </nav>
@@ -179,26 +194,26 @@
                   mb-3
                 "
               >
-                CATEGORIES
+                CONNECT WITH CHAPTERS
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >First Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Second Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Third Link</a
                   >
                 </li>
                 <li>
-                  <a class="text-white hover:text-red-300" href="#"
+                  <a class="text-black hover:text-red-300" href="#"
                     >Fourth Link</a
                   >
                 </li>
