@@ -24,8 +24,10 @@ const routes = [
   { path: '/user', component: User },
 ];
 
+
 const router = new VueRouter({
   routes,
+  mode: 'history'
 });
 
 new Vue({

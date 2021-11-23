@@ -1,122 +1,55 @@
 <template>
   <v-app>
-    <body class="bg-gray-900 font-family-karla h-screen">
-      <div class="w-full flex flex-wrap bg-gray-900">
-        <!-- Login Section -->
-        <div class="w-full md:w-1/2 flex flex-col">
-          <div
-            class="
-              flex
-              justify-center
-              md:justify-start
-              pt-12
-              md:pl-12 md:-mb-24
-            "
-          >
-            <a href="#" class="bg-black text-white font-bold text-xl p-4"
-              >Logo</a
-            >
-          </div>
+    <style>
+    .bg-image {
+      background-image: url(https://i.postimg.cc/13pssvxG/bg-image.png);
+    }
+    .backdrop {
+      backdrop-filter: blur(2px);
+    }
+  </style>
 
-          <div
-            class="
-              flex flex-col
-              justify-center
-              md:justify-start
-              my-auto
-              pt-8
-              md:pt-0
-              px-8
-              md:px-24
-              lg:px-32
-            "
-          >
-            <p class="text-center text-3xl text-yellow-500">Student Login</p>
-            <form
-              class="flex flex-col pt-3 md:pt-8"
-              onsubmit="event.preventDefault();"
-            >
-              <div class="flex flex-col pt-4">
-                <label for="email" class="text-lg text-yellow-500"
-                  >Enter your email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="your@neu.edu.ph"
-                  class="
-                    shadow
-                    appearance-none
-                    border
-                    rounded
-                    w-full
-                    py-2
-                    px-3
-                    text-gray-100
-                    mt-1
-                    leading-tight
-                    focus:outline-none focus:shadow-outline
-                  "
-                />
-              </div>
-
-              <div class="flex flex-col pt-4">
-                <label for="password" class="text-yellow-500"
-                  >Enter your password</label
-                >
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
-                  class="
-                    shadow
-                    appearance-none
-                    border
-                    rounded
-                    w-full
-                    py-2
-                    px-3
-                    text-gray-100
-                    mt-1
-                    leading-tight
-                    focus:outline-none focus:shadow-outline
-                  "
-                />
-              </div>
-
-              <input
-                type="submit"
-                value="Log In"
-                class="
-                  bg-yellow-500
-                  text-white
-                  font-bold
-                  text-lg
-                  hover:bg-yellow-600
-                  p-2
-                  mt-8
-                "
-              />
-            </form>
-            <div class="text-center text-white pt-12 pb-12">
-              <p>
-                Don't have an account yet?
-                <a href="Register.vue" class="underline font-semibold"
-                  >Ask the administrator</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Image Section -->
-        <div class="w-1/2 shadow-2xl">
-          <img
-            class="object-cover w-full h-screen hidden md:block"
-            src="https://images.unsplash.com/photo-1508107506371-193d6e71444c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-          />
-        </div>
+  <div class="h-screen w-full flex justify-center items-center bg-gradient-to-tr from-blue-900 to-blue-500">
+    <div class="bg-image w-full sm:w-1/2 md:w-9/12 lg:w-1/2 mx-3 md:mx-5 lg:mx-0 shadow-md flex flex-col md:flex-row items-center rounded z-10 overflow-hidden bg-center bg-cover bg-blue-600">
+      <div class="w-full md:w-1/2 flex flex-col justify-center items-center bg-opacity-25 bg-blue-600 backdrop">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white my-2 md:my-0">
+          HartDev
+        </h1>
+        <p class="mb-2 text-white hidden md:block font-mono">
+          search a new somethings
+        </p>
       </div>
+      <div class="w-full md:w-1/2 flex flex-col items-center bg-white py-5 md:py-8 px-4">
+        <h3 class="mb-4 font-bold text-3xl flex items-center text-blue-500">
+          LOGIN
+        </h3>
+        <form action="#" class="px-3 flex flex-col justify-center items-center w-full gap-3">
+          <input 
+            type="email" placeholder="email.."
+            class="px-4 py-2 w-full rounded border border-gray-300 shadow-sm text-base placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:border-blue-500"
+          >
+          <input 
+            type="password" placeholder="password.."
+            class="px-4 py-2 w-full rounded border border-gray-300 shadow-sm text-base placeholder-gray-500 placeholder-opacity-50 focus:outline-none focus:border-blue-500"
+          >
+          <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 text-white focus:outline-none focus:ring rounded px-3 py-1">
+            <svg class="w-5 h-5 inline"fill="none"stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+            </svg>
+            <p class="ml-1 text-lg">
+              Login
+            </p>
+          </button>
+        </form>
+        <p class="text-gray-700 text-sm mt-2">
+          don't have an account?
+          <a href="#" class="text-green-500 hover:text-green-600 mt-3 focus:outline-none font-bold underline">
+            register
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
     </body>
   </v-app>
 </template>
