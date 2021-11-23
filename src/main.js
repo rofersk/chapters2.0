@@ -20,6 +20,14 @@ const routes = [
   {
     path: '/admin',
     component: Admin,
+    children: [
+      {
+        path: '/yes',
+        name: 'BookEntry',
+        component: BookEntry,
+        props: true,
+      },
+    ],
   },
   { path: '/user', component: User },
 ];
