@@ -82,7 +82,12 @@ const routes = [
       },
     ],
   },
-  { path: '/user', component: User },
+  { 
+    path: '/user', 
+    name: 'user',
+    component: User,
+    children: []
+  },
 ];
 
 const router = new VueRouter({
