@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Book component',
+  name: 'UserBookComponent',
 
   components: {},
 

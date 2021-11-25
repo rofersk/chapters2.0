@@ -64,11 +64,13 @@
             text-2xl
             font-bold
           "
+          
           id="moka-8pwrq"
           style="font-family: Barlow"
         >
-          Student
+        Student
         </button>
+        <router-link to="/admin">
         <button
           value="button"
           class="
@@ -84,17 +86,21 @@
           id="moka-8pwrq"
           style="font-family: Barlow"
         >
+          
           Admin
+          
         </button>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'Register',
 };
+
+
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');

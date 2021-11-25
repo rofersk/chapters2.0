@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'User Home',
+  name: 'UserHome',
 
   components: {},
 

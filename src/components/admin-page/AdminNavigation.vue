@@ -7,17 +7,17 @@
             <v-list-item two-line>
               <v-list-item-avatar>
                 <v-avatar class="blue darken-2 white--text" size="42" left>
-                  {{ currentUser.user_name.slice(0, 1).toUpperCase() }}
+                  {{ adminCurrentUser.admin_name.slice(0, 1).toUpperCase() }}
                 </v-avatar>
               </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title>{{
-                  currentUser.user_name +
+                  adminCurrentUser.admin_name +
                   ' ' +
-                  currentUser.user_lastname.slice(0, 1).toUpperCase()
+                  adminCurrentUser.admin_lastname.slice(0, 1).toUpperCase()
                 }}</v-list-item-title>
                 <v-list-item-subtitle>{{
-                  currentUser.user_role
+                  adminCurrentUser.admin_role
                 }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -26,11 +26,11 @@
       </v-list>
       <v-divider></v-divider>
       <v-list class="mt-1" nav dense>
-        <v-list-item-group v-model="selectedItem" color="secondary">
-          <div v-for="(item, i) in item_list" :key="i">
+        <v-list-item-group v-model="selectedItems" color="secondary">
+          <div v-for="(item, i) in item_lists" :key="i">
             <v-list-item
               class="px-1 my-3 nav-btn-desu"
-              v-if="!item.has_sub_items && !item.linkTo.includes('https:')"
+              v-if="!item.has_sub_item && !item.linkTo.includes('https:')"
               :to="item.linkTo"
             >
               <v-list-item-icon class="p-2 bg-white nav-list-icon">
@@ -39,13 +39,13 @@
               <v-list-item-content>
                 <v-list-item-title v-text="item.text"></v-list-item-title>
               </v-list-item-content>
-              <v-list-item-action v-if="item.has_sub_items">
+              <v-list-item-action v-if="item.has_sub_item">
                 <v-icon>mdi-menu-down</v-icon>
               </v-list-item-action>
             </v-list-item>
             <v-list-item
               class="px-1 my-3 nav-btn-desu"
-              v-else-if="!item.has_sub_items"
+              v-else-if="!item.has_sub_item"
               v-bind:href="item.linkTo"
             >
               <v-list-item-icon class="p-2 bg-white nav-list-icon">
@@ -54,7 +54,7 @@
               <v-list-item-content>
                 <v-list-item-title v-text="item.text"></v-list-item-title>
               </v-list-item-content>
-              <v-list-item-action v-if="item.has_sub_items">
+              <v-list-item-action v-if="item.has_sub_item">
                 <v-icon>mdi-menu-down</v-icon>
               </v-list-item-action>
             </v-list-item>
@@ -77,78 +77,65 @@
 export default {
   data() {
     return {
-      currentUser: {
-        user_name: '',
-        user_lastname: '',
-        user_role: '',
-        abbrName: '',
+      adminCurrentUser: {
+        admin_name: '',
+        admin_lastname: '',
+        admin_role: '',
+        admin_abbrName: '',
       },
       drawer: true,
-      selectedItem: 0,
-      item_list: [
+      selectedItems: 0,
+      item_lists: [
         {
-          name: 'Dashboard',
-          text: 'Dashboard',
-          icon: 'mdi-chart-bar-stacked',
-          linkTo: '/yes',
-          has_sub_items: false,
+          name: 'Home',
+          text: 'Home',
+          icon: 'mdi-home-outline',
+          linkTo: '/home',
+          has_sub_item: false,
         },
         {
-          name: 'CSOIndicator',
-          text: 'CSO² Project Indicator',
-          icon: 'mdi-briefcase-edit',
-          linkTo: '/yes',
-          has_sub_items: false,
+          name: 'Reserved Books',
+          text: 'Reserved Books',
+          icon: 'mdi-book-multiple',
+          linkTo: '/reserved-books',
+          has_sub_item: false,
         },
         {
-          name: 'CSOProfile',
-          text: 'CSO/CSO Network Basic Information',
-          icon: 'mdi-account-network',
-          linkTo: '/cso-profile',
-          has_sub_items: false,
+          name: 'Borrowed Books',
+          text: 'Borrowed Books',
+          icon: 'mdi-book-minus',
+          linkTo: '/borrowed-books',
+          has_sub_item: false,
         },
         {
-          name: 'Assessment',
-          text: 'Assessment',
-          icon: 'mdi-format-list-text',
-          linkTo: '/assessment',
-          has_sub_items: false,
+          name: 'History',
+          text: 'History',
+          icon: 'mdi-history',
+          linkTo: '/history',
+          has_sub_item: false,
         },
         {
-          name: 'FinanceTracker',
-          text: 'Finance Tracker',
-          icon: 'mdi-credit-card',
-          linkTo: '/finance-tracker',
-          has_sub_items: false,
+          name: 'List Of Books',
+          text: 'List Of Books',
+          icon: 'mdi-book-open',
+          linkTo: '/list-of-books',
+          has_sub_item: false,
         },
         {
-          name: 'ProjectTrackingDocuments',
-          text: 'Project Tracking Document',
-          icon: 'mdi-clipboard-text-search-outline',
-          linkTo: '/project-tracking-documents',
-          has_sub_items: false,
+          name: 'Book Entry',
+          text: 'Book Entry',
+          icon: 'mdi-book-plus',
+          linkTo: '/book-entry',
+          has_sub_item: false,
         },
         {
-          name: 'LMS',
-          text: 'LMS',
-          icon: 'mdi-book-open-page-variant',
-          linkTo: '/lms-data',
-          has_sub_items: false,
-        },
-        {
-          name: 'Users',
-          text: 'Users',
-          icon: 'mdi-account-group',
-          linkTo: '/system-users',
-          has_sub_items: false,
+          name: 'List Of Administrators',
+          text: 'List Of Administrators',
+          icon: 'mdi-book-plus',
+          linkTo: '/list-of-administrators',
+          has_sub_item: false,
         },
         //{ text: 'Activity Feedback', icon: 'mdi-comment-quote', linkTo: 'https://cso2projectdatabase.000webhostapp.com/activity_feedback.php', has_sub_items: false },
-        {
-          text: 'CBLD Indicators',
-          icon: 'mdi-archive-arrow-up-outline',
-          linkTo: 'https://cso2projectdatabase.000webhostapp.com/cbld.php',
-          has_sub_items: false,
-        },
         //{ text: 'DIS', icon: 'mdi-archive-arrow-up-outline', linkTo: 'https://cso2projectdatabase.000webhostapp.com/dis.php', has_sub_items: false },
       ],
     };
@@ -175,7 +162,7 @@ export default {
 }
 
 i.v-icon.v-icon {
-  color: #2e3a59;
+  color: #FF8C00;
 }
 
 .nav-btn-desu {
@@ -186,6 +173,6 @@ i.v-icon.v-icon {
 
 .nav-btn-desu:hover {
   transition: 0.2s ease-in-out;
-  background-color: #e0e0e0;
+  background-color: #FF8C00;
 }
 </style>
