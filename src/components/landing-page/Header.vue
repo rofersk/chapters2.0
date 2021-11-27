@@ -41,7 +41,7 @@
     <div class="flex flex-row-reverse mr-4 ml-4 md:hidden">
       <i class="fas fa-bars"></i>
     </div>
-    <div class="flex flex-row-reverse mr-8 hidden md:flex">
+    <div class="flex flex-row-reverse mr-8 'hidden' md:flex">
       <div class="text-black text-center bg-yellow-500 px-4 py-2 m-2">
         Button
       </div>

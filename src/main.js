@@ -22,6 +22,7 @@ import User from './components/user-page/User.vue';
 import UserBookComponent from './components/user-page/UserBookComponent.vue';
 import UserBookComponentConfirmation from './components/user-page/UserBookComponentConfirmation.vue';
 import UserHome from './components/user-page/UserHome.vue';
+import UserHistory from './components/user-page/UserHistory.vue';
 import UserProfile from './components/user-page/UserProfile.vue';
 import UserReservedBooks from './components/user-page/UserReservedBooks.vue';
 // Configs
@@ -35,7 +36,7 @@ const routes = [
 },
   {
     path: '/admin',
-    name: 'admin',
+    name: 'Admin',
     component: Admin,
     children: [
       {
@@ -81,12 +82,49 @@ const routes = [
         props: true,
       },
     ],
-  },
+},
   { 
-    path: '/user', 
+    path: '/student', 
     name: 'user',
     component: User,
-    children: []
+    children: [
+      {
+        path: '/user-book-component',
+        name: 'UserBookComponent',
+        component: UserBookComponent,
+        props: true,
+      },
+      {
+        path: '/user-book-component-confirmation',
+        name: 'UserBookComponentConfirmation',
+        component: UserBookComponentConfirmation,
+        props: true,
+      },
+      {
+        path: '/user-home',
+        name: 'UserHome',
+        component: UserHome,
+        props: true,
+      },
+      {
+        path: '/user-history',
+        name: 'UserHistory',
+        component: UserHistory,
+        props: true,
+      },
+      {
+        path: '/user-profile',
+        name: 'UserProfile',
+        component: UserProfile,
+        props: true,
+      },
+      {
+        path: '/user-reserved-books',
+        name: 'UserReservedBooks',
+        component: UserReservedBooks,
+        props: true,
+      },
+    ],
   },
 ];
 

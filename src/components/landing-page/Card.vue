@@ -52,6 +52,8 @@
         >
           Chapters
         </h1>
+
+        <router-link to="/student">
         <button
           value="button"
           class="
@@ -70,6 +72,8 @@
         >
         Student
         </button>
+        </router-link>
+
         <router-link to="/admin">
         <button
           value="button"
@@ -86,9 +90,7 @@
           id="moka-8pwrq"
           style="font-family: Barlow"
         >
-          
-          Admin
-          
+          Admin      
         </button>
         </router-link>
       </div>
