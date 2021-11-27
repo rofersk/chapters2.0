@@ -54,44 +54,43 @@
         </h1>
 
         <router-link to="/student">
-        <button
-          value="button"
-          class="
-            hover:text-gray-300
-            bg-yellow-500
-            text-white
-            hover:bg-black
-            w-56
-            p-4
-            text-2xl
-            font-bold
-          "
-          
-          id="moka-8pwrq"
-          style="font-family: Barlow"
-        >
-        Student
-        </button>
+          <button
+            value="button"
+            class="
+              hover:text-gray-300
+              bg-yellow-500
+              text-white
+              hover:bg-black
+              w-56
+              p-4
+              text-2xl
+              font-bold
+            "
+            id="moka-8pwrq"
+            style="font-family: Barlow"
+          >
+            Student
+          </button>
         </router-link>
 
         <router-link to="/admin">
-        <button
-          value="button"
-          class="
-            hover:text-gray-300
-            bg-yellow-500
-            text-white
-            hover:bg-black
-            w-56
-            p-4
-            text-2xl
-            font-bold
-          "
-          id="moka-8pwrq"
-          style="font-family: Barlow"
-        >
-          Admin      
-        </button>
+          <button
+            value="button"
+            class="
+              hover:text-gray-300
+              bg-yellow-500
+              text-white
+              hover:bg-black
+              w-56
+              p-4
+              text-2xl
+              font-bold
+            "
+            id="moka-8pwrq"
+            style="font-family: Barlow"
+          >
+            Admin
+          </button>
         </router-link>
       </div>
     </div>
@@ -101,8 +100,6 @@
 export default {
   name: 'Register',
 };
-
-
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');

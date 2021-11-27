@@ -162,7 +162,7 @@ export default {
 }
 
 i.v-icon.v-icon {
-  color: #FF8C00;
+  color: #ff8c00;
 }
 
 .nav-btn-desu {
@@ -173,6 +173,6 @@ i.v-icon.v-icon {
 
 .nav-btn-desu:hover {
   transition: 0.2s ease-in-out;
-  background-color: #FF8C00;
+  background-color: #ff8c00;
 }
 </style>

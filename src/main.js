@@ -30,10 +30,7 @@ Vue.use(VueRouter);
 Vue.config.productionTip = false;
 
 const routes = [
-  { path: '/chapters', 
-    name: 'LandingPage',
-    component: LandingPage,
-},
+  { path: '/chapters', name: 'LandingPage', component: LandingPage },
   {
     path: '/admin',
     name: 'Admin',
@@ -82,9 +79,9 @@ const routes = [
         props: true,
       },
     ],
-},
-  { 
-    path: '/student', 
+  },
+  {
+    path: '/student',
     name: 'user',
     component: User,
     children: [
@@ -130,7 +127,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
 });
 
 new Vue({
